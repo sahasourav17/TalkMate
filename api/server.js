@@ -22,7 +22,7 @@ app.post("/", async (req, res) => {
     });
     res.send(response.data.choices[0].message.content);
   } catch (err) {
-    res.send("Something Wrong. Please Try again.");
+    res.send("Something error occured");
   }
 });
 
